@@ -1,0 +1,229 @@
+/* цвет основного текста #757575; */
+/* вторичный цвет текста  #212121; */
+/* белый прозрачный текст rgba(255, 255, 255, 0.6) */
+/* акцент #2196F3 */
+/* цвет фона героя и футера #2F303A; */
+/* вторичный фон #F5F4FA; */
+
+:root {
+	--primary-text-color: #757575;
+	--title-text-color: #212121;
+	--accent-color: #2196f3;
+	--primary-bg-color: #ffffff;
+	--secondary-bg-color: #f5f4fa;
+	--hero-bg-color: #2f303a;
+	--contacts-text-color: rgba(255, 255, 255, 0.6);
+}
+body {
+	background-color: var(--primary-bg-color);
+
+	color: var(--primary-text-color);
+	font-family: "roboto", "raleway", sans-serif;
+    letter-spacing: 0.03em;
+    
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.logo{
+	color: var(--title-text-color);
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+    line-height: 1.19;
+}
+.logo:focus{
+    outline-color: var(--accent-color);
+}
+.logo-text {
+	color: var(--accent-color);
+}
+/* шапка */
+.navigation{
+
+}
+
+.nav-list{
+
+}
+.nav-list .link,
+.contacts-list .link{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+color: var(--title-text-color);
+}
+.nav-list .link:hover,
+.nav-list .link:focus,
+.contacts-list .link:hover,
+.contacts-list .link:focus,
+.adress-list .link:hover,
+.adress-list .link:focus,
+.adress-list .link[target=_blank]:hover,
+.adress-list .link[target=_blank]:focus
+{
+    color: var(--accent-color);
+    outline: none;
+
+}
+
+.contacts-list{
+
+}
+.contacts-list .link{
+    
+ color: var(--primary-text-color);
+}
+/* hero */
+.hero{
+    background-color: var(--hero-bg-color);
+    display: block;
+    height:600px ;
+}
+.hero .title{
+    color: var(--primary-bg-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-top: 200px;
+    margin: 0;
+}
+.hero .button{
+    width: 200px;
+    height: 50px;
+    margin-left:700px;
+    margin-top: 30px;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    font-family: 'Roboto';
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87px;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.hero .button:hover{
+    cursor: pointer;
+}
+/* особенности */
+
+.peculiarities{
+
+}
+.peculiarities-title{
+    display: none;
+}
+
+.peculiarities .title{
+    
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color:var(--title-text-color);
+}
+.peculiarities .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+/* чем мы занимаемся */
+.work{
+
+}
+.work .title,
+.team-title{
+
+    font-weight:700;
+    font-size:36px;
+    line-height:1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color:var(--title-text-color);
+
+}
+/* наша команда */
+.team{
+
+}
+.team-title{
+
+}
+.team .title{
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.18;
+   color:var(--title-text-color);
+}
+.team .text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+}
+/* footer */
+.footer{
+    background-color: var(--hero-bg-color);
+
+}
+.footer .logo{
+    color:var(--primary-bg-color);
+    
+}
+.adress{
+
+}
+.adress-list{
+
+}
+.adress-list .link{
+    color:var(--contacts-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+}
+.adress-list .link[target=_blank]{
+    color: var(--primary-bg-color);
+}
+/* портфолио */
+.main{
+
+}
+.portfolio-title{
+    display: none;
+}
+.portfolio .title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: var(--title-text-color);
+
+}
+.portfolio .text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
