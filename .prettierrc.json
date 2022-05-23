@@ -15,6 +15,6 @@
 	"trailingComma": "all",
 	"useTabs": true,
 	"vueIndentScriptAndStyle": false,
-	"singleAttributePerLine": false,
-  "htmlFormatWrapAttributes": force-aligned
+	"singleAttributePerLine": false
+  
 }
