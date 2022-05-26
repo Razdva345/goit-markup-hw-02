@@ -49,14 +49,11 @@ a {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-
-	display: flex;
 }
-/* .logo:focus {
-	outline-color: var(--accent-color);
-} */
+
 .logo-text {
 	color: var(--title-text-color);
+	margin-left: -7px;
 }
 /* шапка */
 
