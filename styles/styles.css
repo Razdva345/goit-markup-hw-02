@@ -30,6 +30,23 @@ a {
 	text-decoration: none;
 }
 
+/* шапка */
+.head-container {
+	width: 1200px;
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	outline: 2px solid red;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.nav {
+	display: flex;
+}
+.contacts-list {
+	display: flex;
+}
 .logo {
 	color: var(--accent-color);
 	font-family: "Raleway", sans-serif;
@@ -38,6 +55,8 @@ a {
 	line-height: 1.19;
 
 	display: flex;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 /* .logo:focus {
 	outline-color: var(--accent-color);
@@ -45,9 +64,12 @@ a {
 .logo-text {
 	color: var(--title-text-color);
 }
-/* шапка */
 
 .nav-list {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	margin: 0;
 }
 
 .nav-list .link,
@@ -83,6 +105,9 @@ a {
 	background-color: var(--hero-bg-color); /* задан для вида */
 }
 .hero .title {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	color: var(--primary-bg-color);
 	font-weight: 900;
 	font-size: 44px;
@@ -90,10 +115,13 @@ a {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+
+	padding: 200px 452px 40px 452px;
 }
 .hero-button {
-	width: 200px;
-	height: 50px;
+	min-width: 200px;
+	min-height: 50px;
+	padding: 10px 32px;
 
 	background-color: var(--accent-color);
 	color: var(--primary-bg-color);
@@ -103,11 +131,15 @@ a {
 	line-height: 1.87;
 	text-align: center;
 	letter-spacing: 0.06em;
-	padding: 0;
+
 	border: 0;
 
 	box-shadow: 0px 4px 4px var(--box-shadow-color);
 	border-radius: 4px;
+
+	margin-top: 0;
+	margin-left: 700px;
+	margin-bottom: 200px;
 }
 .hero-button:hover {
 	cursor: pointer;
@@ -224,11 +256,16 @@ a {
 
 	color: var(--primary-text-color);
 }
+.filter {
+	display: flex;
+	flex-direction: row;
+}
 .button {
 	font-family: inherit;
-	width: 128px;
-	height: 38px;
+	min-width: 128px;
+	min-height: 38px;
 	font-style: normal;
+	padding: 6px 22px;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -240,6 +277,13 @@ a {
 	background-color: var(--secondary-bg-color);
 	border: 0;
 	border-radius: 4px;
+
+	margin-left: 8px;
+}
+
+.btn-all {
+	min-width: 73px;
+	min-height: 38px;
 }
 .button:hover,
 .button:focus {
@@ -247,4 +291,7 @@ a {
 	background-color: var(--accent-color);
 	outline: none;
 	cursor: pointer;
+
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
