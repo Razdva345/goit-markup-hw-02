@@ -20,8 +20,21 @@ body {
 
 	color: var(--primary-text-color);
 	font-family: "roboto", "raleway", sans-serif;
-	font-style: normal;
+	font-size: 14px;
 	letter-spacing: 0.03em;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 li {
 	list-style: none;
@@ -53,11 +66,14 @@ a {
 .nav-list .link,
 .contacts-list .link {
 	font-weight: 500;
-	font-size: 14px;
+
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 
 	color: var(--title-text-color);
+}
+.link.current {
+	color: var(--accent-color);
 }
 /* ховер и фокус */
 .nav-list .link:hover,
@@ -108,28 +124,18 @@ a {
 
 	box-shadow: 0px 4px 4px var(--box-shadow-color);
 	border-radius: 4px;
-}
-.hero-button:hover {
+
 	cursor: pointer;
 }
+
 /* особенности */
 
 .peculiarities {
 }
-.peculiarities-title {
-	/* позже скроем */
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.16;
-	text-align: center;
-	letter-spacing: 0.03em;
-
-	color: var(--title-text-color);
-}
 
 .peculiarities .title {
 	font-weight: 700;
-	font-size: 14px;
+
 	line-height: 1.14;
 	text-transform: uppercase;
 
@@ -137,8 +143,8 @@ a {
 }
 .peculiarities .text {
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.7;
+
+	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
 /* чем мы занимаемся */
@@ -156,6 +162,7 @@ a {
 }
 /* наша команда */
 .team {
+	background-color: var(--secondary-bg-color);
 }
 .team-title {
 }
@@ -185,7 +192,7 @@ a {
 	color: var(--contacts-text-color);
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1.7;
+	line-height: 1.71;
 	font-style: normal;
 }
 .adress-list .link[target="_blank"] {
@@ -195,19 +202,8 @@ a {
 /* портфолио */
 .main {
 }
-.portfolio-title {
-	/* позже скроем */
 
-	font-weight: 700;
-	font-size: 25px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-
-	color: var(--title-text-color);
-}
 .portfolio .title {
-	font-family: "Roboto";
-	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -216,7 +212,6 @@ a {
 	color: var(--title-text-color);
 }
 .portfolio .text {
-	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.8;
@@ -228,7 +223,6 @@ a {
 	font-family: inherit;
 	width: 128px;
 	height: 38px;
-	font-style: normal;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -240,11 +234,11 @@ a {
 	background-color: var(--secondary-bg-color);
 	border: 0;
 	border-radius: 4px;
+
+	cursor: pointer;
 }
 .button:hover,
 .button:focus {
 	color: var(--primary-bg-color);
 	background-color: var(--accent-color);
-	outline: none;
-	cursor: pointer;
 }
