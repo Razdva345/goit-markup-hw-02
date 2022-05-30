@@ -109,6 +109,7 @@ body {
 	background-color: var(--hero-bg-color);
 	text-align: center;
 }
+
 .hero-title {
 	color: var(--primary-white-color);
 	font-weight: 900;
@@ -138,6 +139,10 @@ body {
 
 	cursor: pointer;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+	background-color: #188ce8;
+}
 
 /* --------------------------------ОСОБЕННОСТИ------------------ */
 
@@ -147,6 +152,7 @@ body {
 }
 
 .peculiarities-list-title {
+	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 
@@ -240,8 +246,6 @@ body {
 }
 .filter-btn {
 	font-family: inherit;
-	min-width: 128px;
-	min-height: 38px;
 
 	font-weight: 500;
 	font-size: 16px;
